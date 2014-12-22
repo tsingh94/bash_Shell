@@ -1,20 +1,3 @@
-/*
-* Course: CS 100 Fall 2013
-*
-* First Name: Teghveer 
-* Last Name: Sahni
-* Username: tsahn001
-* email address: tsahn001@ucr.edu
-*
-*
-* Assignment: Homework #7
-*
-* I hereby certify that the contents of this file represent
-* my own original individual work. Nowhere herein is there
-* code from any outside resources such as another individual,
-* a website, or publishings unless specifically designated as
-* permissible by the instructor or TA. */
-
 #include <iostream>
 #include <sstream>
 #include <dirent.h>
@@ -26,14 +9,6 @@
 #include <fcntl.h>
 #include <sys/wait.h>
 using namespace std;
-
-// this function will handle the control c signal and take the appropriate 
-// action by stopping the job but not terminate the shell
-void handleControlC(int signalNum)
-{
-    kill(getpid() , SIGKILL);
-}
-
 
 // this function will get all the PATH directories in a vector<string>
 vector<string> get_PATH_Dirs ()
